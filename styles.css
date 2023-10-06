@@ -15,6 +15,7 @@ header {
   display: flex;
   flex-direction: column;
   background-image: URL(https://imgs.search.brave.com/qWeO7XZhRmdNaXWLSfkwH0lVE7mG85FVJ2d1rYu2wz4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y3JlYXRpdmV1bmN1/dC5jb20vZ2FsbGVy/eS0zOS9hcnQvZ2kt/aW5henVtYS1sYW5k/c2NhcGUuanBn);
+  background-size: cover;
 }
 label {
   display: block;
@@ -44,7 +45,6 @@ fieldset {
   vertical-align: middle;
 }
 input,
-textarea,
 select {
   background-color: hsl(240, 80%, 6%);
   border: 1px solid hsl(240, 80%, 6%);
@@ -52,18 +52,37 @@ select {
   color: white;
   margin: 10px 0 0 0;
   width: 100%;
+  outline-color: #090909;
+}
+textarea {
+  min-height: 5.5em;
+  padding: 0.25rem;
+  background-color: hsl(240, 80%, 6%);
+  border: 1px solid hsl(240, 80%, 6%);
+  min-height: 3em;
+  color: white;
+  margin: 10px 0 0 0;
+  width: 100%;
+  outline-color: #090909;
+}
+::placeholder {
+  font-family: 'Poppins', sans-serif;
 }
 input[type="submit"] {
   display: block;
-  width: 100%;
+  width: 30%;
+  margin-inline: auto;
   background-color: #00f150;
-  min-height: 2em;
+  min-height: 2rem;
   font-size: 16px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.3em;
 }
 
 @media (min-width: 768px) {
   body {
-   font-size: 20px; 
+   font-size: 1.5rem; 
   }
 }   
 @media (min-width: 768px) {
