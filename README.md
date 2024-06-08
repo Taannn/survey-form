@@ -1,2 +1,5 @@
-# survey-form
-freeCodeCamp RWD cert-project #1
+# freeCodeCamp Responsive Web Design Web Certification Project #1
+
+## Screenshot
+
+![Example Image](./live-view.png)
